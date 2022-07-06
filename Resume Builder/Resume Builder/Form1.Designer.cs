@@ -43,6 +43,7 @@
             this.btnBasicInfo = new System.Windows.Forms.Button();
             this.btnProfessional = new System.Windows.Forms.Button();
             this.btnEduc = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Resume_Builder.Properties.Resources.image_2022_07_06_210207199_removebg_preview;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(690, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(695, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(578, 468);
             this.pictureBox1.TabIndex = 2;
@@ -146,7 +147,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(486, 31);
+            this.label7.Location = new System.Drawing.Point(486, 34);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(149, 15);
             this.label7.TabIndex = 11;
@@ -185,12 +186,23 @@
             this.btnEduc.Text = "Education\r\n";
             this.btnEduc.UseVisualStyleBackColor = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(468, 159);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(193, 30);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "PROFESSIONAL EXPERIENCE\r\n\r\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1067, 519);
+            this.ClientSize = new System.Drawing.Size(1067, 619);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEduc);
             this.Controls.Add(this.btnProfessional);
             this.Controls.Add(this.btnBasicInfo);
@@ -212,6 +224,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resume Builder";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,6 +248,7 @@
         private System.Windows.Forms.Button btnBasicInfo;
         private System.Windows.Forms.Button btnProfessional;
         private System.Windows.Forms.Button btnEduc;
+        private System.Windows.Forms.Label label8;
     }
 }
 
