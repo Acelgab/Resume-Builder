@@ -1,0 +1,11 @@
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Resume Builder.exe.config
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Resume Builder.exe
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Resume Builder.pdb
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.AssemblyReference.cache
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume_Builder.Form1.resources
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume_Builder.Properties.Resources.resources
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.GenerateResource.cache
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.CoreCompileInputs.cache
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.exe
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.pdb
