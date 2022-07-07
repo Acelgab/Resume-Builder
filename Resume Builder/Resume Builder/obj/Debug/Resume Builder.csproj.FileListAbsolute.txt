@@ -9,3 +9,6 @@ C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resum
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.CoreCompileInputs.cache
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.exe
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.pdb
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.CopyComplete

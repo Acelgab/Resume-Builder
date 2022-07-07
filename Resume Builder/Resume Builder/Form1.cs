@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace Resume_Builder
 {
@@ -103,7 +104,8 @@ namespace Resume_Builder
                    txtbxSummary.Text
             };
             string strResultJson = JsonConvert.SerializeObject(Data);
-            StreamWriter
+            File.WriteAllText(@"resume.json", strResultJson);
+            MessageBox.Show("Saved!");
         }
     }
 }
