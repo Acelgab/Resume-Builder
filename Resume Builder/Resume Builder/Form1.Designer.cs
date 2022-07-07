@@ -31,44 +31,54 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.txtbxFullName = new System.Windows.Forms.TextBox();
             this.txtbxContact = new System.Windows.Forms.TextBox();
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.txtbxAddress = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblBASIC = new System.Windows.Forms.Label();
             this.btnBasicInfo = new System.Windows.Forms.Button();
             this.btnProfessional = new System.Windows.Forms.Button();
             this.btnEduc = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblCompany = new System.Windows.Forms.Label();
             this.txtbxCompany = new System.Windows.Forms.TextBox();
             this.txtbxJob = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblJob = new System.Windows.Forms.Label();
+            this.lblDates = new System.Windows.Forms.Label();
             this.txtbxDates = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblSummary = new System.Windows.Forms.Label();
             this.txtbxSummary = new System.Windows.Forms.TextBox();
             this.btnAddExp = new System.Windows.Forms.Button();
             this.txtbxSummary2 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblSummary2 = new System.Windows.Forms.Label();
+            this.lblJob2 = new System.Windows.Forms.Label();
             this.txtbxJob2 = new System.Windows.Forms.TextBox();
             this.txtbxCompany2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblCompany2 = new System.Windows.Forms.Label();
             this.txtbxDates2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblDates2 = new System.Windows.Forms.Label();
             this.txtbxSummary3 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblSummary3 = new System.Windows.Forms.Label();
+            this.lblJob3 = new System.Windows.Forms.Label();
             this.txtbxJob3 = new System.Windows.Forms.TextBox();
             this.txtbxCompany3 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblCompany3 = new System.Windows.Forms.Label();
             this.txtbxDates3 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblDates3 = new System.Windows.Forms.Label();
+            this.lblPROFESSIONAL = new System.Windows.Forms.Label();
+            this.lblEDUC = new System.Windows.Forms.Label();
+            this.lblSchool = new System.Windows.Forms.Label();
+            this.txtbxSchool = new System.Windows.Forms.TextBox();
+            this.lblGradDate = new System.Windows.Forms.Label();
+            this.txtbxGradDate = new System.Windows.Forms.TextBox();
+            this.lblDegree = new System.Windows.Forms.Label();
+            this.txtbxDegree = new System.Windows.Forms.TextBox();
+            this.lblGPA = new System.Windows.Forms.Label();
+            this.txtbxGPA = new System.Windows.Forms.TextBox();
+            this.btnAddExp2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,14 +114,14 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // lblName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Full Name:";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(215, 86);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(73, 15);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Full Name:";
             // 
             // txtbxFullName
             // 
@@ -144,42 +154,42 @@
             this.txtbxAddress.Size = new System.Drawing.Size(348, 22);
             this.txtbxAddress.TabIndex = 7;
             // 
-            // label4
+            // lblAddress
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(215, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Address:";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(215, 107);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(60, 15);
+            this.lblAddress.TabIndex = 8;
+            this.lblAddress.Text = "Address:";
             // 
-            // label5
+            // lblContact
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(815, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Contact Number:";
+            this.lblContact.AutoSize = true;
+            this.lblContact.Location = new System.Drawing.Point(815, 107);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(113, 15);
+            this.lblContact.TabIndex = 9;
+            this.lblContact.Text = "Contact Number:";
             // 
-            // label6
+            // lblEmail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(569, 107);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Email:";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(569, 107);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(45, 15);
+            this.lblEmail.TabIndex = 10;
+            this.lblEmail.Text = "Email:";
             // 
-            // label7
+            // lblBASIC
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(486, 34);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "BASIC INFORMATION\r\n";
+            this.lblBASIC.AutoSize = true;
+            this.lblBASIC.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBASIC.Location = new System.Drawing.Point(486, 34);
+            this.lblBASIC.Name = "lblBASIC";
+            this.lblBASIC.Size = new System.Drawing.Size(149, 15);
+            this.lblBASIC.TabIndex = 11;
+            this.lblBASIC.Text = "BASIC INFORMATION\r\n";
             // 
             // btnBasicInfo
             // 
@@ -191,6 +201,7 @@
             this.btnBasicInfo.TabIndex = 12;
             this.btnBasicInfo.Text = "Basic Information";
             this.btnBasicInfo.UseVisualStyleBackColor = false;
+            this.btnBasicInfo.Click += new System.EventHandler(this.btnBasicInfo_Click);
             // 
             // btnProfessional
             // 
@@ -202,6 +213,7 @@
             this.btnProfessional.TabIndex = 13;
             this.btnProfessional.Text = "Professional Experience";
             this.btnProfessional.UseVisualStyleBackColor = false;
+            this.btnProfessional.Click += new System.EventHandler(this.btnProfessional_Click);
             // 
             // btnEduc
             // 
@@ -213,25 +225,16 @@
             this.btnEduc.TabIndex = 14;
             this.btnEduc.Text = "Education\r\n";
             this.btnEduc.UseVisualStyleBackColor = false;
+            this.btnEduc.Click += new System.EventHandler(this.btnEduc_Click);
             // 
-            // label8
+            // lblCompany
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(468, 159);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 30);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "PROFESSIONAL EXPERIENCE\r\n\r\n";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(223, 195);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 15);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Company Name:";
+            this.lblCompany.AutoSize = true;
+            this.lblCompany.Location = new System.Drawing.Point(223, 195);
+            this.lblCompany.Name = "lblCompany";
+            this.lblCompany.Size = new System.Drawing.Size(109, 15);
+            this.lblCompany.TabIndex = 16;
+            this.lblCompany.Text = "Company Name:";
             // 
             // txtbxCompany
             // 
@@ -250,23 +253,23 @@
             this.txtbxJob.Size = new System.Drawing.Size(297, 22);
             this.txtbxJob.TabIndex = 18;
             // 
-            // label10
+            // lblJob
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(223, 221);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 15);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Job Title:";
+            this.lblJob.AutoSize = true;
+            this.lblJob.Location = new System.Drawing.Point(223, 221);
+            this.lblJob.Name = "lblJob";
+            this.lblJob.Size = new System.Drawing.Size(64, 15);
+            this.lblJob.TabIndex = 19;
+            this.lblJob.Text = "Job Title:";
             // 
-            // label11
+            // lblDates
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(692, 195);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 15);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Dates From-To";
+            this.lblDates.AutoSize = true;
+            this.lblDates.Location = new System.Drawing.Point(692, 195);
+            this.lblDates.Name = "lblDates";
+            this.lblDates.Size = new System.Drawing.Size(97, 15);
+            this.lblDates.TabIndex = 20;
+            this.lblDates.Text = "Dates From-To";
             // 
             // txtbxDates
             // 
@@ -276,15 +279,15 @@
             this.txtbxDates.Size = new System.Drawing.Size(215, 22);
             this.txtbxDates.TabIndex = 21;
             // 
-            // label12
+            // lblSummary
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(223, 245);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(207, 15);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "Summary of your Resposibilities";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.lblSummary.AutoSize = true;
+            this.lblSummary.Location = new System.Drawing.Point(223, 245);
+            this.lblSummary.Name = "lblSummary";
+            this.lblSummary.Size = new System.Drawing.Size(207, 15);
+            this.lblSummary.TabIndex = 22;
+            this.lblSummary.Text = "Summary of your Resposibilities";
+            this.lblSummary.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtbxSummary
             // 
@@ -296,12 +299,13 @@
             // 
             // btnAddExp
             // 
-            this.btnAddExp.Location = new System.Drawing.Point(667, 155);
+            this.btnAddExp.Location = new System.Drawing.Point(195, 192);
             this.btnAddExp.Name = "btnAddExp";
             this.btnAddExp.Size = new System.Drawing.Size(22, 23);
             this.btnAddExp.TabIndex = 24;
             this.btnAddExp.Text = "+";
             this.btnAddExp.UseVisualStyleBackColor = true;
+            this.btnAddExp.Click += new System.EventHandler(this.btnAddExp_Click);
             // 
             // txtbxSummary2
             // 
@@ -311,23 +315,23 @@
             this.txtbxSummary2.Size = new System.Drawing.Size(396, 53);
             this.txtbxSummary2.TabIndex = 30;
             // 
-            // label13
+            // lblSummary2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(226, 384);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(207, 15);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Summary of your Resposibilities";
+            this.lblSummary2.AutoSize = true;
+            this.lblSummary2.Location = new System.Drawing.Point(226, 384);
+            this.lblSummary2.Name = "lblSummary2";
+            this.lblSummary2.Size = new System.Drawing.Size(207, 15);
+            this.lblSummary2.TabIndex = 29;
+            this.lblSummary2.Text = "Summary of your Resposibilities";
             // 
-            // label14
+            // lblJob2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(226, 360);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 15);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "Job Title:";
+            this.lblJob2.AutoSize = true;
+            this.lblJob2.Location = new System.Drawing.Point(226, 360);
+            this.lblJob2.Name = "lblJob2";
+            this.lblJob2.Size = new System.Drawing.Size(64, 15);
+            this.lblJob2.TabIndex = 28;
+            this.lblJob2.Text = "Job Title:";
             // 
             // txtbxJob2
             // 
@@ -345,14 +349,14 @@
             this.txtbxCompany2.Size = new System.Drawing.Size(348, 22);
             this.txtbxCompany2.TabIndex = 26;
             // 
-            // label15
+            // lblCompany2
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(226, 334);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 15);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Company Name:";
+            this.lblCompany2.AutoSize = true;
+            this.lblCompany2.Location = new System.Drawing.Point(226, 334);
+            this.lblCompany2.Name = "lblCompany2";
+            this.lblCompany2.Size = new System.Drawing.Size(109, 15);
+            this.lblCompany2.TabIndex = 25;
+            this.lblCompany2.Text = "Company Name:";
             // 
             // txtbxDates2
             // 
@@ -362,14 +366,14 @@
             this.txtbxDates2.Size = new System.Drawing.Size(215, 22);
             this.txtbxDates2.TabIndex = 32;
             // 
-            // label16
+            // lblDates2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(692, 334);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 15);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "Dates From-To";
+            this.lblDates2.AutoSize = true;
+            this.lblDates2.Location = new System.Drawing.Point(692, 334);
+            this.lblDates2.Name = "lblDates2";
+            this.lblDates2.Size = new System.Drawing.Size(97, 15);
+            this.lblDates2.TabIndex = 31;
+            this.lblDates2.Text = "Dates From-To";
             // 
             // txtbxSummary3
             // 
@@ -379,23 +383,23 @@
             this.txtbxSummary3.Size = new System.Drawing.Size(396, 53);
             this.txtbxSummary3.TabIndex = 38;
             // 
-            // label17
+            // lblSummary3
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(226, 525);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(207, 15);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "Summary of your Resposibilities";
+            this.lblSummary3.AutoSize = true;
+            this.lblSummary3.Location = new System.Drawing.Point(226, 525);
+            this.lblSummary3.Name = "lblSummary3";
+            this.lblSummary3.Size = new System.Drawing.Size(207, 15);
+            this.lblSummary3.TabIndex = 37;
+            this.lblSummary3.Text = "Summary of your Resposibilities";
             // 
-            // label18
+            // lblJob3
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(226, 501);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 15);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Job Title:";
+            this.lblJob3.AutoSize = true;
+            this.lblJob3.Location = new System.Drawing.Point(226, 501);
+            this.lblJob3.Name = "lblJob3";
+            this.lblJob3.Size = new System.Drawing.Size(64, 15);
+            this.lblJob3.TabIndex = 36;
+            this.lblJob3.Text = "Job Title:";
             // 
             // txtbxJob3
             // 
@@ -413,14 +417,14 @@
             this.txtbxCompany3.Size = new System.Drawing.Size(348, 22);
             this.txtbxCompany3.TabIndex = 34;
             // 
-            // label19
+            // lblCompany3
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(226, 475);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(109, 15);
-            this.label19.TabIndex = 33;
-            this.label19.Text = "Company Name:";
+            this.lblCompany3.AutoSize = true;
+            this.lblCompany3.Location = new System.Drawing.Point(226, 475);
+            this.lblCompany3.Name = "lblCompany3";
+            this.lblCompany3.Size = new System.Drawing.Size(109, 15);
+            this.lblCompany3.TabIndex = 33;
+            this.lblCompany3.Text = "Company Name:";
             // 
             // txtbxDates3
             // 
@@ -430,14 +434,112 @@
             this.txtbxDates3.Size = new System.Drawing.Size(215, 22);
             this.txtbxDates3.TabIndex = 40;
             // 
-            // label20
+            // lblDates3
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(692, 475);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(97, 15);
-            this.label20.TabIndex = 39;
-            this.label20.Text = "Dates From-To";
+            this.lblDates3.AutoSize = true;
+            this.lblDates3.Location = new System.Drawing.Point(692, 475);
+            this.lblDates3.Name = "lblDates3";
+            this.lblDates3.Size = new System.Drawing.Size(97, 15);
+            this.lblDates3.TabIndex = 39;
+            this.lblDates3.Text = "Dates From-To";
+            // 
+            // lblPROFESSIONAL
+            // 
+            this.lblPROFESSIONAL.AutoSize = true;
+            this.lblPROFESSIONAL.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPROFESSIONAL.Location = new System.Drawing.Point(468, 159);
+            this.lblPROFESSIONAL.Name = "lblPROFESSIONAL";
+            this.lblPROFESSIONAL.Size = new System.Drawing.Size(193, 30);
+            this.lblPROFESSIONAL.TabIndex = 15;
+            this.lblPROFESSIONAL.Text = "PROFESSIONAL EXPERIENCE\r\n\r\n";
+            // 
+            // lblEDUC
+            // 
+            this.lblEDUC.AutoSize = true;
+            this.lblEDUC.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEDUC.Location = new System.Drawing.Point(524, 159);
+            this.lblEDUC.Name = "lblEDUC";
+            this.lblEDUC.Size = new System.Drawing.Size(90, 15);
+            this.lblEDUC.TabIndex = 41;
+            this.lblEDUC.Text = "EDUCATION";
+            // 
+            // lblSchool
+            // 
+            this.lblSchool.AutoSize = true;
+            this.lblSchool.Location = new System.Drawing.Point(223, 195);
+            this.lblSchool.Name = "lblSchool";
+            this.lblSchool.Size = new System.Drawing.Size(96, 15);
+            this.lblSchool.TabIndex = 42;
+            this.lblSchool.Text = "School Name: ";
+            // 
+            // txtbxSchool
+            // 
+            this.txtbxSchool.Location = new System.Drawing.Point(338, 192);
+            this.txtbxSchool.Multiline = true;
+            this.txtbxSchool.Name = "txtbxSchool";
+            this.txtbxSchool.Size = new System.Drawing.Size(348, 22);
+            this.txtbxSchool.TabIndex = 43;
+            // 
+            // lblGradDate
+            // 
+            this.lblGradDate.AutoSize = true;
+            this.lblGradDate.Location = new System.Drawing.Point(692, 195);
+            this.lblGradDate.Name = "lblGradDate";
+            this.lblGradDate.Size = new System.Drawing.Size(129, 15);
+            this.lblGradDate.TabIndex = 44;
+            this.lblGradDate.Text = "Date of Graduation:";
+            // 
+            // txtbxGradDate
+            // 
+            this.txtbxGradDate.Location = new System.Drawing.Point(827, 192);
+            this.txtbxGradDate.Multiline = true;
+            this.txtbxGradDate.Name = "txtbxGradDate";
+            this.txtbxGradDate.Size = new System.Drawing.Size(215, 22);
+            this.txtbxGradDate.TabIndex = 45;
+            // 
+            // lblDegree
+            // 
+            this.lblDegree.AutoSize = true;
+            this.lblDegree.Location = new System.Drawing.Point(226, 221);
+            this.lblDegree.Name = "lblDegree";
+            this.lblDegree.Size = new System.Drawing.Size(53, 15);
+            this.lblDegree.TabIndex = 46;
+            this.lblDegree.Text = "Degree:";
+            // 
+            // txtbxDegree
+            // 
+            this.txtbxDegree.Location = new System.Drawing.Point(293, 218);
+            this.txtbxDegree.Multiline = true;
+            this.txtbxDegree.Name = "txtbxDegree";
+            this.txtbxDegree.Size = new System.Drawing.Size(342, 22);
+            this.txtbxDegree.TabIndex = 47;
+            // 
+            // lblGPA
+            // 
+            this.lblGPA.AutoSize = true;
+            this.lblGPA.Location = new System.Drawing.Point(226, 245);
+            this.lblGPA.Name = "lblGPA";
+            this.lblGPA.Size = new System.Drawing.Size(36, 15);
+            this.lblGPA.TabIndex = 48;
+            this.lblGPA.Text = "GPA:";
+            // 
+            // txtbxGPA
+            // 
+            this.txtbxGPA.Location = new System.Drawing.Point(226, 263);
+            this.txtbxGPA.Multiline = true;
+            this.txtbxGPA.Name = "txtbxGPA";
+            this.txtbxGPA.Size = new System.Drawing.Size(93, 26);
+            this.txtbxGPA.TabIndex = 49;
+            // 
+            // btnAddExp2
+            // 
+            this.btnAddExp2.Location = new System.Drawing.Point(195, 330);
+            this.btnAddExp2.Name = "btnAddExp2";
+            this.btnAddExp2.Size = new System.Drawing.Size(22, 23);
+            this.btnAddExp2.TabIndex = 50;
+            this.btnAddExp2.Text = "+";
+            this.btnAddExp2.UseVisualStyleBackColor = true;
+            this.btnAddExp2.Click += new System.EventHandler(this.btnAddExp2_Click);
             // 
             // Form1
             // 
@@ -445,44 +547,54 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 619);
+            this.Controls.Add(this.btnAddExp2);
+            this.Controls.Add(this.txtbxGPA);
+            this.Controls.Add(this.lblGPA);
+            this.Controls.Add(this.txtbxDegree);
+            this.Controls.Add(this.lblDegree);
+            this.Controls.Add(this.txtbxGradDate);
+            this.Controls.Add(this.lblGradDate);
+            this.Controls.Add(this.txtbxSchool);
+            this.Controls.Add(this.lblSchool);
+            this.Controls.Add(this.lblEDUC);
             this.Controls.Add(this.txtbxDates3);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.lblDates3);
             this.Controls.Add(this.txtbxSummary3);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.lblSummary3);
+            this.Controls.Add(this.lblJob3);
             this.Controls.Add(this.txtbxJob3);
             this.Controls.Add(this.txtbxCompany3);
-            this.Controls.Add(this.label19);
+            this.Controls.Add(this.lblCompany3);
             this.Controls.Add(this.txtbxDates2);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lblDates2);
             this.Controls.Add(this.txtbxSummary2);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblSummary2);
+            this.Controls.Add(this.lblJob2);
             this.Controls.Add(this.txtbxJob2);
             this.Controls.Add(this.txtbxCompany2);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblCompany2);
             this.Controls.Add(this.btnAddExp);
             this.Controls.Add(this.txtbxSummary);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblSummary);
             this.Controls.Add(this.txtbxDates);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblDates);
+            this.Controls.Add(this.lblJob);
             this.Controls.Add(this.txtbxJob);
             this.Controls.Add(this.txtbxCompany);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblCompany);
+            this.Controls.Add(this.lblPROFESSIONAL);
             this.Controls.Add(this.btnEduc);
             this.Controls.Add(this.btnProfessional);
             this.Controls.Add(this.btnBasicInfo);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblBASIC);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblContact);
+            this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.txtbxAddress);
             this.Controls.Add(this.txtbxEmail);
             this.Controls.Add(this.txtbxContact);
             this.Controls.Add(this.txtbxFullName);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -504,44 +616,54 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtbxFullName;
         private System.Windows.Forms.TextBox txtbxContact;
         private System.Windows.Forms.TextBox txtbxEmail;
         private System.Windows.Forms.TextBox txtbxAddress;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblBASIC;
         private System.Windows.Forms.Button btnBasicInfo;
         private System.Windows.Forms.Button btnProfessional;
         private System.Windows.Forms.Button btnEduc;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblCompany;
         private System.Windows.Forms.TextBox txtbxCompany;
         private System.Windows.Forms.TextBox txtbxJob;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblJob;
+        private System.Windows.Forms.Label lblDates;
         private System.Windows.Forms.TextBox txtbxDates;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblSummary;
         private System.Windows.Forms.TextBox txtbxSummary;
         private System.Windows.Forms.Button btnAddExp;
         private System.Windows.Forms.TextBox txtbxSummary2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblSummary2;
+        private System.Windows.Forms.Label lblJob2;
         private System.Windows.Forms.TextBox txtbxJob2;
         private System.Windows.Forms.TextBox txtbxCompany2;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblCompany2;
         private System.Windows.Forms.TextBox txtbxDates2;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblDates2;
         private System.Windows.Forms.TextBox txtbxSummary3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblSummary3;
+        private System.Windows.Forms.Label lblJob3;
         private System.Windows.Forms.TextBox txtbxJob3;
         private System.Windows.Forms.TextBox txtbxCompany3;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblCompany3;
         private System.Windows.Forms.TextBox txtbxDates3;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblDates3;
+        private System.Windows.Forms.Label lblPROFESSIONAL;
+        private System.Windows.Forms.Label lblEDUC;
+        private System.Windows.Forms.Label lblSchool;
+        private System.Windows.Forms.TextBox txtbxSchool;
+        private System.Windows.Forms.Label lblGradDate;
+        private System.Windows.Forms.TextBox txtbxGradDate;
+        private System.Windows.Forms.Label lblDegree;
+        private System.Windows.Forms.TextBox txtbxDegree;
+        private System.Windows.Forms.Label lblGPA;
+        private System.Windows.Forms.TextBox txtbxGPA;
+        private System.Windows.Forms.Button btnAddExp2;
     }
 }
 

@@ -19,6 +19,17 @@ namespace Resume_Builder
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            lblBASIC.Hide();lblName.Hide();txtbxFullName.Hide();lblAddress.Hide(); 
+            txtbxAddress.Hide(); lblEmail.Hide(); txtbxEmail.Hide(); lblContact.Hide();
+            txtbxContact.Hide(); lblPROFESSIONAL.Hide(); btnAddExp.Hide(); lblCompany.Hide();
+            txtbxCompany.Hide(); lblDates.Hide(); txtbxDates.Hide(); lblJob.Hide();
+            txtbxJob.Hide(); lblSummary.Hide(); txtbxSummary.Hide(); lblCompany2.Hide();
+            txtbxCompany2.Hide(); lblDates2.Hide(); txtbxDates2.Hide(); lblJob2.Hide();
+            txtbxJob2.Hide(); lblSummary2.Hide(); txtbxSummary2.Hide(); lblCompany3.Hide();
+            txtbxCompany3.Hide(); lblDates3.Hide(); txtbxDates3.Hide(); lblJob3.Hide();
+            txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide(); lblEDUC.Hide();
+            lblSchool.Hide(); txtbxSchool.Hide(); lblGradDate.Hide(); txtbxGradDate.Hide();
+            lblDegree.Hide();txtbxDegree.Hide(); lblGPA.Hide(); txtbxGPA.Hide(); btnAddExp2.Hide();
 
         }
 
@@ -30,6 +41,50 @@ namespace Resume_Builder
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBasicInfo_Click(object sender, EventArgs e)
+        {
+            lblBASIC.Show(); lblName.Show(); txtbxFullName.Show(); lblAddress.Show();
+            txtbxAddress.Show(); lblEmail.Show(); txtbxEmail.Show(); lblContact.Show();
+            txtbxContact.Show();
+        }
+
+        private void btnProfessional_Click(object sender, EventArgs e)
+        {
+            lblPROFESSIONAL.Show(); btnAddExp.Show(); lblCompany.Show();
+            txtbxCompany.Show(); lblDates.Show(); txtbxDates.Show(); lblJob.Show();
+            txtbxJob.Show(); lblSummary.Show(); txtbxSummary.Show(); 
+        }
+
+        private void btnAddExp_Click(object sender, EventArgs e)
+        {
+            lblCompany2.Show();
+            txtbxCompany2.Show(); lblDates2.Show(); txtbxDates2.Show(); lblJob2.Show();
+            txtbxJob2.Show(); lblSummary2.Show(); txtbxSummary2.Show(); btnAddExp2.Show();
+            btnAddExp.Hide();
+        }
+
+        private void btnAddExp2_Click(object sender, EventArgs e)
+        {
+            lblCompany3.Show();
+            txtbxCompany3.Show(); lblDates3.Show(); txtbxDates3.Show(); lblJob3.Show();
+            txtbxJob3.Show(); lblSummary3.Show(); txtbxSummary3.Show(); btnAddExp2.Hide();
+        }
+
+        private void btnEduc_Click(object sender, EventArgs e)
+        {
+            lblPROFESSIONAL.Hide(); btnAddExp.Hide(); lblCompany.Hide();
+            txtbxCompany.Hide(); lblDates.Hide(); txtbxDates.Hide(); lblJob.Hide();
+            txtbxJob.Hide(); lblSummary.Hide(); txtbxSummary.Hide(); lblCompany2.Hide();
+            txtbxCompany2.Hide(); lblDates2.Hide(); txtbxDates2.Hide(); lblJob2.Hide();
+            txtbxJob2.Hide(); lblSummary2.Hide(); txtbxSummary2.Hide(); lblCompany3.Hide();
+            txtbxCompany3.Hide(); lblDates3.Hide(); txtbxDates3.Hide(); lblJob3.Hide();
+            txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide();
+
+            lblEDUC.Show();
+            lblSchool.Show(); txtbxSchool.Show(); lblGradDate.Show(); txtbxGradDate.Show();
+            lblDegree.Show(); txtbxDegree.Show(); lblGPA.Show(); txtbxGPA.Show();
         }
     }
 }
