@@ -51,8 +51,24 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtbxDates = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbxSummary = new System.Windows.Forms.TextBox();
             this.btnAddExp = new System.Windows.Forms.Button();
+            this.txtbxSummary2 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtbxJob2 = new System.Windows.Forms.TextBox();
+            this.txtbxCompany2 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtbxDates2 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtbxSummary3 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtbxJob3 = new System.Windows.Forms.TextBox();
+            this.txtbxCompany3 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtbxDates3 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,7 +227,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(215, 187);
+            this.label9.Location = new System.Drawing.Point(223, 195);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 15);
             this.label9.TabIndex = 16;
@@ -219,7 +235,7 @@
             // 
             // txtbxCompany
             // 
-            this.txtbxCompany.Location = new System.Drawing.Point(330, 184);
+            this.txtbxCompany.Location = new System.Drawing.Point(338, 192);
             this.txtbxCompany.Multiline = true;
             this.txtbxCompany.Name = "txtbxCompany";
             this.txtbxCompany.Size = new System.Drawing.Size(348, 22);
@@ -228,7 +244,7 @@
             // 
             // txtbxJob
             // 
-            this.txtbxJob.Location = new System.Drawing.Point(285, 210);
+            this.txtbxJob.Location = new System.Drawing.Point(293, 218);
             this.txtbxJob.Multiline = true;
             this.txtbxJob.Name = "txtbxJob";
             this.txtbxJob.Size = new System.Drawing.Size(297, 22);
@@ -237,7 +253,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(215, 213);
+            this.label10.Location = new System.Drawing.Point(223, 221);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 15);
             this.label10.TabIndex = 19;
@@ -246,7 +262,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(692, 187);
+            this.label11.Location = new System.Drawing.Point(692, 195);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 15);
             this.label11.TabIndex = 20;
@@ -254,7 +270,7 @@
             // 
             // txtbxDates
             // 
-            this.txtbxDates.Location = new System.Drawing.Point(788, 184);
+            this.txtbxDates.Location = new System.Drawing.Point(788, 192);
             this.txtbxDates.Multiline = true;
             this.txtbxDates.Name = "txtbxDates";
             this.txtbxDates.Size = new System.Drawing.Size(215, 22);
@@ -263,20 +279,20 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(215, 237);
+            this.label12.Location = new System.Drawing.Point(223, 245);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(207, 15);
             this.label12.TabIndex = 22;
             this.label12.Text = "Summary of your Resposibilities";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // textBox1
+            // txtbxSummary
             // 
-            this.textBox1.Location = new System.Drawing.Point(218, 255);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(396, 53);
-            this.textBox1.TabIndex = 23;
+            this.txtbxSummary.Location = new System.Drawing.Point(226, 263);
+            this.txtbxSummary.Multiline = true;
+            this.txtbxSummary.Name = "txtbxSummary";
+            this.txtbxSummary.Size = new System.Drawing.Size(396, 53);
+            this.txtbxSummary.TabIndex = 23;
             // 
             // btnAddExp
             // 
@@ -287,14 +303,166 @@
             this.btnAddExp.Text = "+";
             this.btnAddExp.UseVisualStyleBackColor = true;
             // 
+            // txtbxSummary2
+            // 
+            this.txtbxSummary2.Location = new System.Drawing.Point(229, 402);
+            this.txtbxSummary2.Multiline = true;
+            this.txtbxSummary2.Name = "txtbxSummary2";
+            this.txtbxSummary2.Size = new System.Drawing.Size(396, 53);
+            this.txtbxSummary2.TabIndex = 30;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(226, 384);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(207, 15);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Summary of your Resposibilities";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(226, 360);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 15);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Job Title:";
+            // 
+            // txtbxJob2
+            // 
+            this.txtbxJob2.Location = new System.Drawing.Point(296, 357);
+            this.txtbxJob2.Multiline = true;
+            this.txtbxJob2.Name = "txtbxJob2";
+            this.txtbxJob2.Size = new System.Drawing.Size(297, 22);
+            this.txtbxJob2.TabIndex = 27;
+            // 
+            // txtbxCompany2
+            // 
+            this.txtbxCompany2.Location = new System.Drawing.Point(341, 331);
+            this.txtbxCompany2.Multiline = true;
+            this.txtbxCompany2.Name = "txtbxCompany2";
+            this.txtbxCompany2.Size = new System.Drawing.Size(348, 22);
+            this.txtbxCompany2.TabIndex = 26;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(226, 334);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(109, 15);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Company Name:";
+            // 
+            // txtbxDates2
+            // 
+            this.txtbxDates2.Location = new System.Drawing.Point(788, 331);
+            this.txtbxDates2.Multiline = true;
+            this.txtbxDates2.Name = "txtbxDates2";
+            this.txtbxDates2.Size = new System.Drawing.Size(215, 22);
+            this.txtbxDates2.TabIndex = 32;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(692, 334);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 15);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Dates From-To";
+            // 
+            // txtbxSummary3
+            // 
+            this.txtbxSummary3.Location = new System.Drawing.Point(229, 543);
+            this.txtbxSummary3.Multiline = true;
+            this.txtbxSummary3.Name = "txtbxSummary3";
+            this.txtbxSummary3.Size = new System.Drawing.Size(396, 53);
+            this.txtbxSummary3.TabIndex = 38;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(226, 525);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(207, 15);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Summary of your Resposibilities";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(226, 501);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 15);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "Job Title:";
+            // 
+            // txtbxJob3
+            // 
+            this.txtbxJob3.Location = new System.Drawing.Point(296, 498);
+            this.txtbxJob3.Multiline = true;
+            this.txtbxJob3.Name = "txtbxJob3";
+            this.txtbxJob3.Size = new System.Drawing.Size(297, 22);
+            this.txtbxJob3.TabIndex = 35;
+            // 
+            // txtbxCompany3
+            // 
+            this.txtbxCompany3.Location = new System.Drawing.Point(341, 472);
+            this.txtbxCompany3.Multiline = true;
+            this.txtbxCompany3.Name = "txtbxCompany3";
+            this.txtbxCompany3.Size = new System.Drawing.Size(348, 22);
+            this.txtbxCompany3.TabIndex = 34;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(226, 475);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(109, 15);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "Company Name:";
+            // 
+            // txtbxDates3
+            // 
+            this.txtbxDates3.Location = new System.Drawing.Point(788, 472);
+            this.txtbxDates3.Multiline = true;
+            this.txtbxDates3.Name = "txtbxDates3";
+            this.txtbxDates3.Size = new System.Drawing.Size(215, 22);
+            this.txtbxDates3.TabIndex = 40;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(692, 475);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(97, 15);
+            this.label20.TabIndex = 39;
+            this.label20.Text = "Dates From-To";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 619);
+            this.Controls.Add(this.txtbxDates3);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.txtbxSummary3);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.txtbxJob3);
+            this.Controls.Add(this.txtbxCompany3);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.txtbxDates2);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtbxSummary2);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtbxJob2);
+            this.Controls.Add(this.txtbxCompany2);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.btnAddExp);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbxSummary);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtbxDates);
             this.Controls.Add(this.label11);
@@ -356,8 +524,24 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtbxDates;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbxSummary;
         private System.Windows.Forms.Button btnAddExp;
+        private System.Windows.Forms.TextBox txtbxSummary2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtbxJob2;
+        private System.Windows.Forms.TextBox txtbxCompany2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtbxDates2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtbxSummary3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtbxJob3;
+        private System.Windows.Forms.TextBox txtbxCompany3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtbxDates3;
+        private System.Windows.Forms.Label label20;
     }
 }
 
