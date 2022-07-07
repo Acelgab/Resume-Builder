@@ -34,7 +34,7 @@ namespace Resume_Builder
             lblSchool.Hide(); txtbxSchool.Hide(); lblGradDate.Hide(); txtbxGradDate.Hide();
             lblDegree.Hide();txtbxDegree.Hide(); lblGPA.Hide(); txtbxGPA.Hide(); btnAddExp2.Hide();
             lblSurname.Hide(); lblFirstName.Hide();lblMiddle.Hide(); txtbxFirst.Hide(); btnSave.Hide();
-            txtbxMiddle.Hide();
+            txtbxMiddle.Hide(); rchtxtbxRead.Hide();
 
         }
 
@@ -106,6 +106,7 @@ namespace Resume_Builder
         
         private void button1_Click(object sender, EventArgs e)
         {
+            rchtxtbxRead.Show();
             data Data = new data()
             {
                 LastName = txtbxFullName.Text,
@@ -125,14 +126,22 @@ namespace Resume_Builder
             string strResultJson = JsonConvert.SerializeObject(Data);
             File.WriteAllText(@"resume.json", strResultJson);
             MessageBox.Show("Stored!");
-            btnSave.Show();
+
+            string jsonFromFile;
+            using (var reader = new StreamReader(@"resume.json"))
+            {
+                jsonFromFile = reader.ReadToEnd();
+            }
+            rchtxtbxRead.Text = jsonFromFile;
+            var readJson = JsonConvert.DeserializeObject<data>(strResultJson);
+
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new Form2().ShowDialog();
-            this.Show();
+            rchtxtbxRead.Show();
+           
         }
     }
 }
