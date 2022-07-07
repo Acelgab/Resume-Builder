@@ -79,6 +79,7 @@
             this.lblGPA = new System.Windows.Forms.Label();
             this.txtbxGPA = new System.Windows.Forms.TextBox();
             this.btnAddExp2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,7 +196,7 @@
             // 
             this.btnBasicInfo.BackColor = System.Drawing.Color.SteelBlue;
             this.btnBasicInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBasicInfo.Location = new System.Drawing.Point(-4, 55);
+            this.btnBasicInfo.Location = new System.Drawing.Point(-6, 55);
             this.btnBasicInfo.Name = "btnBasicInfo";
             this.btnBasicInfo.Size = new System.Drawing.Size(132, 23);
             this.btnBasicInfo.TabIndex = 12;
@@ -207,7 +208,7 @@
             // 
             this.btnProfessional.BackColor = System.Drawing.Color.SteelBlue;
             this.btnProfessional.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnProfessional.Location = new System.Drawing.Point(-4, 82);
+            this.btnProfessional.Location = new System.Drawing.Point(-4, 79);
             this.btnProfessional.Name = "btnProfessional";
             this.btnProfessional.Size = new System.Drawing.Size(165, 23);
             this.btnProfessional.TabIndex = 13;
@@ -219,7 +220,7 @@
             // 
             this.btnEduc.BackColor = System.Drawing.Color.SteelBlue;
             this.btnEduc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEduc.Location = new System.Drawing.Point(-4, 111);
+            this.btnEduc.Location = new System.Drawing.Point(-7, 103);
             this.btnEduc.Name = "btnEduc";
             this.btnEduc.Size = new System.Drawing.Size(89, 23);
             this.btnEduc.TabIndex = 14;
@@ -541,12 +542,25 @@
             this.btnAddExp2.UseVisualStyleBackColor = true;
             this.btnAddExp2.Click += new System.EventHandler(this.btnAddExp2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(-15, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 23);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 619);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAddExp2);
             this.Controls.Add(this.txtbxGPA);
             this.Controls.Add(this.lblGPA);
@@ -664,6 +678,7 @@
         private System.Windows.Forms.Label lblGPA;
         private System.Windows.Forms.TextBox txtbxGPA;
         private System.Windows.Forms.Button btnAddExp2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

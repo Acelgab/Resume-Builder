@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace Resume_Builder
 {
+  
     public partial class Form1 : Form
     {
         public Form1()
@@ -85,6 +87,23 @@ namespace Resume_Builder
             lblEDUC.Show();
             lblSchool.Show(); txtbxSchool.Show(); lblGradDate.Show(); txtbxGradDate.Show();
             lblDegree.Show(); txtbxDegree.Show(); lblGPA.Show(); txtbxGPA.Show();
+        }
+        class data
+        {
+            public string basicInfo { get; set; }
+            public string professionalExp { get; set; }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            data Data = new data()
+            {
+                basicInfo = txtbxFullName.Text + txtbxAddress.Text + txtbxEmail.Text +
+                   txtbxContact.Text,
+                professionalExp = txtbxDates.Text + txtbxDates.Text + txtbxJob.Text +
+                   txtbxSummary.Text
+            };
+            string strResultJson = JsonConvert.SerializeObject(Data);
+            StreamWriter
         }
     }
 }
