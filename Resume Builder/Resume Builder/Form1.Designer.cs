@@ -79,7 +79,13 @@
             this.lblGPA = new System.Windows.Forms.Label();
             this.txtbxGPA = new System.Windows.Forms.TextBox();
             this.btnAddExp2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStore = new System.Windows.Forms.Button();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.lblMiddle = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.txtbxMiddle = new System.Windows.Forms.TextBox();
+            this.txtbxFirst = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +124,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(215, 86);
+            this.lblName.Location = new System.Drawing.Point(217, 63);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(73, 15);
             this.lblName.TabIndex = 3;
@@ -126,10 +132,10 @@
             // 
             // txtbxFullName
             // 
-            this.txtbxFullName.Location = new System.Drawing.Point(294, 82);
+            this.txtbxFullName.Location = new System.Drawing.Point(294, 63);
             this.txtbxFullName.Multiline = true;
             this.txtbxFullName.Name = "txtbxFullName";
-            this.txtbxFullName.Size = new System.Drawing.Size(272, 20);
+            this.txtbxFullName.Size = new System.Drawing.Size(218, 20);
             this.txtbxFullName.TabIndex = 4;
             // 
             // txtbxContact
@@ -542,17 +548,75 @@
             this.btnAddExp2.UseVisualStyleBackColor = true;
             this.btnAddExp2.Click += new System.EventHandler(this.btnAddExp2_Click);
             // 
-            // button1
+            // btnStore
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(-15, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 23);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStore.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnStore.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnStore.Location = new System.Drawing.Point(-10, 127);
+            this.btnStore.Name = "btnStore";
+            this.btnStore.Size = new System.Drawing.Size(97, 23);
+            this.btnStore.TabIndex = 51;
+            this.btnStore.Text = "Store Data";
+            this.btnStore.UseVisualStyleBackColor = false;
+            this.btnStore.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblSurname
+            // 
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Font = new System.Drawing.Font("Lucida Fax", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSurname.Location = new System.Drawing.Point(293, 86);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(55, 14);
+            this.lblSurname.TabIndex = 54;
+            this.lblSurname.Text = "Surname";
+            // 
+            // lblMiddle
+            // 
+            this.lblMiddle.AutoSize = true;
+            this.lblMiddle.Font = new System.Drawing.Font("Lucida Fax", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMiddle.Location = new System.Drawing.Point(723, 88);
+            this.lblMiddle.Name = "lblMiddle";
+            this.lblMiddle.Size = new System.Drawing.Size(55, 14);
+            this.lblMiddle.TabIndex = 55;
+            this.lblMiddle.Text = "Middle I.";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Lucida Fax", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(516, 86);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(66, 14);
+            this.lblFirstName.TabIndex = 56;
+            this.lblFirstName.Text = "First Name";
+            // 
+            // txtbxMiddle
+            // 
+            this.txtbxMiddle.Location = new System.Drawing.Point(726, 63);
+            this.txtbxMiddle.Multiline = true;
+            this.txtbxMiddle.Name = "txtbxMiddle";
+            this.txtbxMiddle.Size = new System.Drawing.Size(47, 20);
+            this.txtbxMiddle.TabIndex = 57;
+            // 
+            // txtbxFirst
+            // 
+            this.txtbxFirst.Location = new System.Drawing.Point(519, 63);
+            this.txtbxFirst.Multiline = true;
+            this.txtbxFirst.Name = "txtbxFirst";
+            this.txtbxFirst.Size = new System.Drawing.Size(201, 20);
+            this.txtbxFirst.TabIndex = 58;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSave.Location = new System.Drawing.Point(-3, 151);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(92, 23);
+            this.btnSave.TabIndex = 59;
+            this.btnSave.Text = "Save As PDF";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Form1
             // 
@@ -560,7 +624,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 619);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtbxFirst);
+            this.Controls.Add(this.txtbxMiddle);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblMiddle);
+            this.Controls.Add(this.lblSurname);
+            this.Controls.Add(this.btnStore);
             this.Controls.Add(this.btnAddExp2);
             this.Controls.Add(this.txtbxGPA);
             this.Controls.Add(this.lblGPA);
@@ -678,7 +748,13 @@
         private System.Windows.Forms.Label lblGPA;
         private System.Windows.Forms.TextBox txtbxGPA;
         private System.Windows.Forms.Button btnAddExp2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStore;
+        private System.Windows.Forms.Label lblSurname;
+        private System.Windows.Forms.Label lblMiddle;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.TextBox txtbxMiddle;
+        private System.Windows.Forms.TextBox txtbxFirst;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 

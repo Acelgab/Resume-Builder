@@ -33,6 +33,8 @@ namespace Resume_Builder
             txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide(); lblEDUC.Hide();
             lblSchool.Hide(); txtbxSchool.Hide(); lblGradDate.Hide(); txtbxGradDate.Hide();
             lblDegree.Hide();txtbxDegree.Hide(); lblGPA.Hide(); txtbxGPA.Hide(); btnAddExp2.Hide();
+            lblSurname.Hide(); lblFirstName.Hide();lblMiddle.Hide(); txtbxFirst.Hide(); btnSave.Hide();
+            txtbxMiddle.Hide();
 
         }
 
@@ -50,7 +52,8 @@ namespace Resume_Builder
         {
             lblBASIC.Show(); lblName.Show(); txtbxFullName.Show(); lblAddress.Show();
             txtbxAddress.Show(); lblEmail.Show(); txtbxEmail.Show(); lblContact.Show();
-            txtbxContact.Show();
+            txtbxContact.Show(); txtbxFirst.Show(); txtbxMiddle.Show(); lblSurname.Show();lblMiddle.Show();
+            lblFirstName.Show();
         }
 
         private void btnProfessional_Click(object sender, EventArgs e)
@@ -89,23 +92,47 @@ namespace Resume_Builder
             lblSchool.Show(); txtbxSchool.Show(); lblGradDate.Show(); txtbxGradDate.Show();
             lblDegree.Show(); txtbxDegree.Show(); lblGPA.Show(); txtbxGPA.Show();
         }
-        class data
+        public class data
         {
-            public string basicInfo { get; set; }
+            public string LastName { get; set; }
+            public string FirstName { get; set; }
+            public string MiddleI { get; set; }
+            public string Address { get; set;}
+            public string Email { get; set; }
+            public string ContactNumber { get; set; }
             public string professionalExp { get; set; }
+            public string educ { get; set; }
         }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             data Data = new data()
             {
-                basicInfo = txtbxFullName.Text + txtbxAddress.Text + txtbxEmail.Text +
-                   txtbxContact.Text,
-                professionalExp = txtbxDates.Text + txtbxDates.Text + txtbxJob.Text +
-                   txtbxSummary.Text
+                LastName = txtbxFullName.Text,
+                FirstName = txtbxFirst.Text,
+                MiddleI = txtbxMiddle.Text,
+                Address = txtbxAddress.Text,
+                Email = txtbxEmail.Text,
+                ContactNumber = txtbxContact.Text,
+
+                professionalExp = txtbxCompany.Text + txtbxDates.Text + txtbxJob.Text +
+                txtbxSummary.Text + txtbxCompany2.Text + txtbxDates2.Text + txtbxJob2.Text +
+                txtbxSummary2.Text + txtbxCompany3.Text + txtbxDates3.Text + txtbxJob3.Text +
+                txtbxSummary3.Text,
+            
+                educ = txtbxSchool.Text + txtbxGradDate.Text + txtbxDegree.Text + txtbxGPA.Text
             };
             string strResultJson = JsonConvert.SerializeObject(Data);
             File.WriteAllText(@"resume.json", strResultJson);
-            MessageBox.Show("Saved!");
+            MessageBox.Show("Stored!");
+            btnSave.Show();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form2().ShowDialog();
+            this.Show();
         }
     }
 }

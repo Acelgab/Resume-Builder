@@ -79,5 +79,15 @@ namespace Resume_Builder.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2022_07_07_222743702_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("image_2022-07-07_222743702-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
