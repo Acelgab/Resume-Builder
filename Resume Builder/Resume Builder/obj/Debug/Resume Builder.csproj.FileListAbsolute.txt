@@ -12,3 +12,9 @@ C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resum
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\obj\Debug\Resume Builder.csproj.CopyComplete
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\PdfSharp.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\PdfSharp.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Resume Builder\Resume Builder\Resume Builder\bin\Debug\de\PdfSharp.Charting.resources.dll

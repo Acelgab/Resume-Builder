@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 
 namespace Resume_Builder
 {
@@ -123,12 +125,13 @@ namespace Resume_Builder
             
                 educ = txtbxSchool.Text + txtbxGradDate.Text + txtbxDegree.Text + txtbxGPA.Text
             };
-            string strResultJson = JsonConvert.SerializeObject(Data);
-            File.WriteAllText(@"resume.json", strResultJson);
+            string strResultJson = JsonConvert.SerializeObject(Data, Formatting.Indented);
+            File.WriteAllText(Application.StartupPath + txtbxFullName + "_" + txtbxFirst +".json", strResultJson);
+            PDF();
             MessageBox.Show("Stored!");
 
             string jsonFromFile;
-            using (var reader = new StreamReader(@"resume.json"))
+            using (var reader = new StreamReader(Application.StartupPath + txtbxFullName + "_" + txtbxFirst + ".json"))
             {
                 jsonFromFile = reader.ReadToEnd();
             }
@@ -137,11 +140,21 @@ namespace Resume_Builder
 
 
         }
-
+        private void PDF()
+        {
+            PdfDocument pdfDocument = new PdfDocument();
+            PdfPage pages = pdfDocument.AddPage();
+            XGraphics xGraphics = XGraphics.FromPdfPage(pages); 
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            rchtxtbxRead.Show();
+         
            
+        }
+
+        private void rchtxtbxRead_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

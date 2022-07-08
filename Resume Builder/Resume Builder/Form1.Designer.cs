@@ -621,11 +621,12 @@
             // 
             // rchtxtbxRead
             // 
-            this.rchtxtbxRead.Location = new System.Drawing.Point(16, 241);
+            this.rchtxtbxRead.Location = new System.Drawing.Point(16, 218);
             this.rchtxtbxRead.Name = "rchtxtbxRead";
-            this.rchtxtbxRead.Size = new System.Drawing.Size(259, 366);
+            this.rchtxtbxRead.Size = new System.Drawing.Size(259, 375);
             this.rchtxtbxRead.TabIndex = 60;
             this.rchtxtbxRead.Text = "";
+            this.rchtxtbxRead.TextChanged += new System.EventHandler(this.rchtxtbxRead_TextChanged);
             // 
             // Form1
             // 
@@ -697,7 +698,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Resume Builder";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
