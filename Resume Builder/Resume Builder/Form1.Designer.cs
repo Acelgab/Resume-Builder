@@ -84,7 +84,6 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.txtbxMiddle = new System.Windows.Forms.TextBox();
             this.txtbxFirst = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rchtxtbxRead = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -547,7 +546,7 @@
             this.btnStore.Name = "btnStore";
             this.btnStore.Size = new System.Drawing.Size(97, 23);
             this.btnStore.TabIndex = 51;
-            this.btnStore.Text = "Store Data";
+            this.btnStore.Text = "Save as PDF";
             this.btnStore.UseVisualStyleBackColor = false;
             this.btnStore.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -597,18 +596,6 @@
             this.txtbxFirst.Size = new System.Drawing.Size(201, 20);
             this.txtbxFirst.TabIndex = 58;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSave.Location = new System.Drawing.Point(-3, 151);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(92, 23);
-            this.btnSave.TabIndex = 59;
-            this.btnSave.Text = "Save As PDF";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Resume_Builder.Properties.Resources.image_2022_07_06_210207199_removebg_preview;
@@ -621,9 +608,11 @@
             // 
             // rchtxtbxRead
             // 
-            this.rchtxtbxRead.Location = new System.Drawing.Point(16, 218);
+            this.rchtxtbxRead.BackColor = System.Drawing.Color.PowderBlue;
+            this.rchtxtbxRead.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.rchtxtbxRead.Location = new System.Drawing.Point(226, 304);
             this.rchtxtbxRead.Name = "rchtxtbxRead";
-            this.rchtxtbxRead.Size = new System.Drawing.Size(259, 375);
+            this.rchtxtbxRead.Size = new System.Drawing.Size(463, 248);
             this.rchtxtbxRead.TabIndex = 60;
             this.rchtxtbxRead.Text = "";
             this.rchtxtbxRead.TextChanged += new System.EventHandler(this.rchtxtbxRead_TextChanged);
@@ -635,7 +624,6 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 619);
             this.Controls.Add(this.rchtxtbxRead);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtbxFirst);
             this.Controls.Add(this.txtbxMiddle);
             this.Controls.Add(this.lblFirstName);
@@ -765,7 +753,6 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.TextBox txtbxMiddle;
         private System.Windows.Forms.TextBox txtbxFirst;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RichTextBox rchtxtbxRead;
     }
 }

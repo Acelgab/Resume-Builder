@@ -35,7 +35,7 @@ namespace Resume_Builder
             txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide(); lblEDUC.Hide();
             lblSchool.Hide(); txtbxSchool.Hide(); lblGradDate.Hide(); txtbxGradDate.Hide();
             lblDegree.Hide();txtbxDegree.Hide(); lblGPA.Hide(); txtbxGPA.Hide(); btnAddExp2.Hide();
-            lblSurname.Hide(); lblFirstName.Hide();lblMiddle.Hide(); txtbxFirst.Hide(); btnSave.Hide();
+            lblSurname.Hide(); lblFirstName.Hide();lblMiddle.Hide(); txtbxFirst.Hide(); 
             txtbxMiddle.Hide(); rchtxtbxRead.Hide();
 
         }
@@ -88,7 +88,7 @@ namespace Resume_Builder
             txtbxCompany2.Hide(); lblDates2.Hide(); txtbxDates2.Hide(); lblJob2.Hide();
             txtbxJob2.Hide(); lblSummary2.Hide(); txtbxSummary2.Hide(); lblCompany3.Hide();
             txtbxCompany3.Hide(); lblDates3.Hide(); txtbxDates3.Hide(); lblJob3.Hide();
-            txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide();
+            txtbxJob3.Hide(); lblSummary3.Hide(); txtbxSummary3.Hide(); btnAddExp2.Hide();
 
             lblEDUC.Show();
             lblSchool.Show(); txtbxSchool.Show(); lblGradDate.Show(); txtbxGradDate.Show();
@@ -137,17 +137,17 @@ namespace Resume_Builder
                 Date2 = txtbxDates2.Text,
                 Job2 = txtbxJob2.Text,
                 Summary2 = txtbxSummary2.Text,
-                Company3 = txtbxCompany2.Text,
-                Date3 = txtbxDates2.Text,
-                Job3 = txtbxJob2.Text,
-                Summary3 = txtbxSummary2.Text,
+                Company3 = txtbxCompany3.Text,
+                Date3 = txtbxDates3.Text,
+                Job3 = txtbxJob3.Text,
+                Summary3 = txtbxSummary3.Text,
             
                 educ = txtbxSchool.Text + txtbxGradDate.Text + txtbxDegree.Text + txtbxGPA.Text
             };
             string strResultJson = JsonConvert.SerializeObject(Data, Formatting.Indented);
             File.WriteAllText(Application.StartupPath + "\\Json\\" + txtbxFullName.Text + "_" + txtbxFirst.Text +".json", strResultJson);
             PDF();
-            MessageBox.Show("Stored!");
+            MessageBox.Show("Saved in Files!");
 
             string jsonFromFile;
             using (var reader = new StreamReader(Application.StartupPath + "\\Json\\" + txtbxFullName.Text + "_" + txtbxFirst.Text + ".json"))
@@ -164,11 +164,31 @@ namespace Resume_Builder
             PdfDocument pdfDocument = new PdfDocument();
             PdfPage pages = pdfDocument.AddPage();
             XGraphics xGraphics = XGraphics.FromPdfPage(pages);
-            xGraphics.DrawString(txtbxFullName.Text + ", " + txtbxFirst.Text + " " + txtbxMiddle.Text,
-              new XFont("Lucida Fax", 18, XFontStyle.Bold), XBrushes.Black, new XPoint(50, 50));
-            xGraphics.DrawString(txtbxAddress + " " + txtbxFirst.Text + " " + txtbxMiddle.Text,
-              new XFont("Lucida Fax", 18, XFontStyle.Bold), XBrushes.Black, new XPoint(50, 50));
-            pdfDocument.Save(Application.StartupPath + "\\PDF\\" + txtbxFullName.Text + "_" + txtbxFirst.Text + ".pdf");
+            xGraphics.DrawString(txtbxFullName.Text.ToUpper() + ", " + txtbxFirst.Text.ToUpper() + " " + txtbxMiddle.Text.ToUpper(),
+              new XFont("Times New Roman", 16, XFontStyle.Bold), XBrushes.Black, new XPoint(50, 50));
+            xGraphics.DrawString(txtbxAddress.Text + " | " + txtbxEmail.Text + "| " + txtbxContact.Text,
+              new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 70));
+            xGraphics.DrawString("EDUCATION",new XFont("Times New Roman", 14, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 140));
+            xGraphics.DrawString(txtbxSchool.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 160));
+            xGraphics.DrawString(txtbxGradDate.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(500, 160));
+            xGraphics.DrawString(txtbxDegree.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 180));
+            xGraphics.DrawString(txtbxGPA.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 200));
+            xGraphics.DrawString("PROFESSIONAL EXPERIENCE", new XFont("Times New Roman", 14, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 280));
+            xGraphics.DrawString(txtbxCompany.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 300));
+            xGraphics.DrawString(txtbxDates.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(500, 300));
+            xGraphics.DrawString(txtbxJob.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 320));
+            xGraphics.DrawString(txtbxSummary.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 340));
+            xGraphics.DrawString(txtbxCompany2.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50,400));
+            xGraphics.DrawString(txtbxDates2.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(500, 400));
+            xGraphics.DrawString(txtbxJob2.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 420));
+            xGraphics.DrawString(txtbxSummary2.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 440));
+            xGraphics.DrawString(txtbxCompany3.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 520));
+            xGraphics.DrawString(txtbxDates3.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(500, 520));
+            xGraphics.DrawString(txtbxJob3.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 540));
+            xGraphics.DrawString(txtbxSummary3.Text, new XFont("Times New Roman", 12, XFontStyle.Regular), XBrushes.Black, new XPoint(50, 560));
+
+            pdfDocument.Save(Application.StartupPath + "\\PDF\\" + txtbxFullName.Text.ToUpper() + "_" + txtbxFirst.Text.ToUpper() + ".pdf");
+
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
