@@ -102,7 +102,18 @@ namespace Resume_Builder
             public string Address { get; set;}
             public string Email { get; set; }
             public string ContactNumber { get; set; }
-            public string professionalExp { get; set; }
+            public string Company { get; set; }
+            public string Date { get; set; }
+            public string Job { get; set; } 
+            public string Summary { get; set; }
+            public string Company2 { get; set; }
+            public string Date2 { get; set; }
+            public string Job2 { get; set; }
+            public string Summary2 { get; set; }
+            public string Company3 { get; set; }
+            public string Date3 { get; set; }
+            public string Job3 { get; set; }
+            public string Summary3 { get; set; }
             public string educ { get; set; }
         }
         
@@ -118,20 +129,28 @@ namespace Resume_Builder
                 Email = txtbxEmail.Text,
                 ContactNumber = txtbxContact.Text,
 
-                professionalExp = txtbxCompany.Text + txtbxDates.Text + txtbxJob.Text +
-                txtbxSummary.Text + txtbxCompany2.Text + txtbxDates2.Text + txtbxJob2.Text +
-                txtbxSummary2.Text + txtbxCompany3.Text + txtbxDates3.Text + txtbxJob3.Text +
-                txtbxSummary3.Text,
+                Company = txtbxCompany.Text,
+                Date = txtbxDates.Text,
+                Job = txtbxJob.Text,
+                Summary = txtbxSummary.Text,
+                Company2 = txtbxCompany2.Text,
+                Date2 = txtbxDates2.Text,
+                Job2 = txtbxJob2.Text,
+                Summary2 = txtbxSummary2.Text,
+                Company3 = txtbxCompany2.Text,
+                Date3 = txtbxDates2.Text,
+                Job3 = txtbxJob2.Text,
+                Summary3 = txtbxSummary2.Text,
             
                 educ = txtbxSchool.Text + txtbxGradDate.Text + txtbxDegree.Text + txtbxGPA.Text
             };
             string strResultJson = JsonConvert.SerializeObject(Data, Formatting.Indented);
-            File.WriteAllText(Application.StartupPath + txtbxFullName + "_" + txtbxFirst +".json", strResultJson);
+            File.WriteAllText(Application.StartupPath + "\\Json\\" + txtbxFullName.Text + "_" + txtbxFirst.Text +".json", strResultJson);
             PDF();
             MessageBox.Show("Stored!");
 
             string jsonFromFile;
-            using (var reader = new StreamReader(Application.StartupPath + txtbxFullName + "_" + txtbxFirst + ".json"))
+            using (var reader = new StreamReader(Application.StartupPath + "\\Json\\" + txtbxFullName.Text + "_" + txtbxFirst.Text + ".json"))
             {
                 jsonFromFile = reader.ReadToEnd();
             }
@@ -144,7 +163,12 @@ namespace Resume_Builder
         {
             PdfDocument pdfDocument = new PdfDocument();
             PdfPage pages = pdfDocument.AddPage();
-            XGraphics xGraphics = XGraphics.FromPdfPage(pages); 
+            XGraphics xGraphics = XGraphics.FromPdfPage(pages);
+            xGraphics.DrawString(txtbxFullName.Text + ", " + txtbxFirst.Text + " " + txtbxMiddle.Text,
+              new XFont("Lucida Fax", 18, XFontStyle.Bold), XBrushes.Black, new XPoint(50, 50));
+            xGraphics.DrawString(txtbxAddress + " " + txtbxFirst.Text + " " + txtbxMiddle.Text,
+              new XFont("Lucida Fax", 18, XFontStyle.Bold), XBrushes.Black, new XPoint(50, 50));
+            pdfDocument.Save(Application.StartupPath + "\\PDF\\" + txtbxFullName.Text + "_" + txtbxFirst.Text + ".pdf");
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
